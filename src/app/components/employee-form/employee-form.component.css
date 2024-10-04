@@ -1,0 +1,170 @@
+body {
+    background-color: #eff7f9!important;
+    font-family: monospace!important;
+}  
+
+@media only screen and (max-width: 90%) {
+                .icone-case {
+                    margin-top: 19px;
+                }
+            }
+            
+            .icon-case {
+                   width: 35px!important;
+    float: left!important;
+    background: #fff!important;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    height: 40px!important;
+    position: relative!important;
+    text-align: center!important;
+    line-height: 40px!important;
+        margin-top: 20px!important;
+                border-top: 2px solid #507ea3;
+                border-bottom: 2px solid #507ea3;
+                border-right: none!important;
+                border-left: 2px solid #507ea3;
+            }
+            
+            .from-data input,
+            select {
+                width: 87%!important;
+            }
+            
+            .from-data textarea {
+                width: 100%!important;
+            }
+
+        @media only screen and (max-width: 600px) {
+                  .full_section .sid-sec {
+                      margin-top: 0px!important
+                  }
+                  .full_section .tgl {
+                      margin-top: -26px!important;
+                  }
+          
+              }
+
+ @media only screen and (max-width: 600px) {
+                        .full_section .sid-sec {
+                            margin-top: 0px!important
+                        }
+                        .full_section .tgl {
+                            margin-top: -26px!important;
+                        }
+   
+   
+                      }
+
+#content {
+    /* padding: 20px; */
+    min-height: 100vh;
+    transition: all 0.3s;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    perspective: 1500px;
+}
+.from-data {
+    margin-top: 50px!important;
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 631px!important;
+    margin: auto;
+    border: 0px solid #507ea3;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    box-shadow: inset -4px -1px 15px 3px rgba(154, 147, 140, 0.5), 5px 1px 2px rgba(255, 255, 255, 1);
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+input {
+    padding-left: 10px;
+    border: 2px solid #507ea3;
+    height: 40px;
+    line-height: 40px;
+    padding: 0.5em 0.75em;
+    background-color: #fff!important;
+    color: #195A6F;
+    transition: all 0.25s ease-out;
+    margin-bottom: 12px!important;
+    outline: none;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+label {
+    color: #1E7794;
+    margin-bottom: 0px!important;
+    font-size: 14px;
+    font-family: monospace;
+    margin-left: -34px;
+      display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.from-data .fa-home, .fa-code, .fa-mobile-phone, .fa-phone, .fa-tags, .fa-signal, .fa-upload, .fa-clock-o, .fa-commenting-o, .fa-envelope-o, .fa-male, .fa-envelope, .fa-building-o {
+    font-size: 15px!important;
+    color: #406582;
+}
+.from-data #upload, .btn-new {
+    background-color: #507ea3!important;
+    width: 100%;
+}
+textarea {
+    margin-top: 10px!important;
+    border: 2px solid #507ea3;
+    color: #195A6F !important;
+    transition: all 0.25s ease-out;
+    max-height: 120px;
+    max-width: 100%;
+    width: 100%!important;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+element.style {
+}
+.from-data .btn-new {
+    height: 40px;
+}
+.from-data #upload, .btn-new {
+    background-color: #507ea3!important;
+    width: 100%;
+}
+button {
+    border: 0px;
+    background: #ee2780!important;
+    color: white!important;
+    font-size: 13px!important;
+    cursor: pointer;
+    width: 87px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.centered-header {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff; 
+    background-color: #507ea3; 
+    padding: 15px; 
+    border-radius: 5px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.error {
+  color: red;
+  font-size: 1.0rem;
+}

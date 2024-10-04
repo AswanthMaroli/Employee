@@ -1,0 +1,34 @@
+<div class="wrapper " style="margin: 20px;">
+    <div id="content">
+      <div class="header-container">
+        <h1 class="centered-header">Employee List</h1>
+        <p class="sub-header">Manage your employees efficiently</p>
+      </div>
+      <div class="from-data">
+        <table class="employee-table">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Mobile</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let employee of employees" class="employee-row">
+              <td>{{ employee.FirstName }}</td>
+              <td>{{ employee.LastName }}</td>
+              <td>{{ employee.Email }}</td>
+              <td>{{ employee.Skills }}</td>
+              <td>
+                <button class="btn-new" (click)="editEmployee(employee)">Edit</button>
+                <!-- (click)="editEmployee(employee.EmployeeID)" -->
+                <button class="btn-new" (click)="deleteEmployee(employee.EmployeeID)">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,88 @@
+<div class="wrapper">
+  <div id="content">
+    <br><br><br>
+    <h1 class="centered-header">Employee Form</h1>
+    <div enctype="multipart/form-data" class="from-data">
+      <div class="row">
+        <div class="col-md-6 col-xs-6">
+          <label>First Name</label>
+          <span class="icon-case"><i class="fa fa-male"></i></span>
+          <input type="text" [(ngModel)]="EmployeeData.FirstName" class="new-select" style="width: 100%;">
+          <div class="error" *ngIf="Submitted && EmployeeData.FirstName==''" >
+            First Name is required.
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-6">
+          <label>Last Name</label>
+          <span class="icon-case"><i class="fa fa-male"></i></span>
+          <input type="text" [(ngModel)]="EmployeeData.LastName" style="width: 100%;">
+          <div class="error" *ngIf="Submitted && EmployeeData.LastName==''" >
+            Last Name is required.
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xs-6">
+          <label>Email</label>
+          <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+          <input type="email" [(ngModel)]="EmployeeData.Email" style="width: 100%;">
+          <div class="error" *ngIf="Submitted && EmployeeData.Email==''" >
+            Please Enter a valid Email.
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-6">
+          <label>Mobile Number</label>
+          <span class="icon-case"><i class="fa fa-mobile-phone"></i></span>
+          <input type="text" [(ngModel)]="EmployeeData.PhoneNumber" style="width: 100%;">
+          <div class="error" *ngIf="Submitted && EmployeeData.PhoneNumber==''" >
+            Mobile Number is required.
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xs-6">
+          <label>Skills</label>
+          <span class="icon-case"><i class="fa fa-building-o"></i></span>
+          <input type="text" [(ngModel)]="EmployeeData.Skills" class="new-select" style="width: 100%;">
+          <div *ngIf="Submitted && EmployeeData.Skills==''" class="error">
+            Skills is required.
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-6">
+          <label>Position</label>
+          <span class="icon-case"><i class="fa fa-building-o"></i></span>
+          <input type="text" [(ngModel)]="EmployeeData.Position" class="new-select" style="width: 100%;">
+          <div *ngIf="Submitted && EmployeeData.Position==''" class="error">
+            Position is required.
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xs-6">
+          <label>Department</label>
+          <span class="icon-case"><i class="fa fa-building-o"></i></span>
+          <input type="text" [(ngModel)]="EmployeeData.Department" class="new-select" style="width: 100%;">
+          <div *ngIf="Submitted && EmployeeData.Department==''" class="error">
+            Department is required.
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-6">
+          <label>Salary</label>
+          <span class="icon-case"><i class="fa fa-building-o"></i></span>
+          <input type="text" [(ngModel)]="EmployeeData.Salary" class="new-select" style="width: 100%;">
+          <div *ngIf="Submitted && EmployeeData.Salary==''" class="error">
+            Salary is required.
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button type="submit" (click)="onSubmit()" class="btn-new">Save Detail</button>
+        </div>
+        <div *ngIf="this.SuccessMessage " class="text-success " style="margin-left: 270PX; margin-top: 10PX;">
+          {{this.SuccessMessage}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
